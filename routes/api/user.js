@@ -3,7 +3,7 @@ const router = Router()
 
 //const {db_config, admin} = require('../../config')
 
-router.post('/', (req, res) => {
+router.get('/', (req, res) => {
 
     try{
         const user = {

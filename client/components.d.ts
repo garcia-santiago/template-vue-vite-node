@@ -5,12 +5,11 @@
 declare module 'vue' {
   export interface GlobalComponents {
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
-    CarbonLogoLinkedin: typeof import('~icons/carbon/logo-linkedin')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
-    EditarProyectos: typeof import('C:/SANTIAGO/Proyectos/tests/sgarcia-tech/client/src/components/EditarProyectos.vue')['default']
-    Proyectos: typeof import('C:/SANTIAGO/Proyectos/tests/sgarcia-tech/client/src/components/Proyectos.vue')['default']
-    Top: typeof import('C:/SANTIAGO/Proyectos/tests/template-vue-vite-node/client/src/components/Top.vue')['default']
+    Counter: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/Counter.vue')['default']
+    GetUser: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/GetUser.vue')['default']
+    Top: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/Top.vue')['default']
   }
 }
 

@@ -10,6 +10,7 @@
   "dependencies": {
     "@vueuse/core": "^6.5.3",
     "axios": "^0.23.0",
+    "pinia": "^2.0.14",
     "vue": "^3.2.19",
     "vue-demi": "^0.11.4",
     "vue-router": "^4.0.11"

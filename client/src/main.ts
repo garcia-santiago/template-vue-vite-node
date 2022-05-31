@@ -2,6 +2,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 
 // windicss layers
@@ -16,4 +17,5 @@ const router = createRouter({
   routes,
 })
 app.use(router)
+app.use(createPinia())
 app.mount('#app')
