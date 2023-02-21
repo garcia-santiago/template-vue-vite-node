@@ -1,21 +1,20 @@
 const { Router } = require('express')
 const router = Router()
 
-//const {db_config, admin} = require('../../config')
+const connection = require('../../db');
 
 router.get('/', (req, res) => {
 
-    try{
-        const user = {
-            nombre: 'Santiago',
-            id: 001,
-            age: 19
-        }
-        res.status(200).send(user)
-    }
-    catch (error){
-        res.status(400).send(error)
-    }
+    try {    
+        const getSql = "SELECT * FROM `usuarios`";
+        connection.query(getSql, function (err, result) {
+          if (err) throw err;
+          res.status(200).send(result)
+          res.end()
+        });
+      } catch (error) {
+        res.status(400).send(error.message)
+      }
 })
 
 module.exports = router
