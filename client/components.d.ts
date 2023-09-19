@@ -7,7 +7,6 @@ declare module 'vue' {
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
-    Counter: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/Counter.vue')['default']
     GetUser: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/GetUser.vue')['default']
     Top: typeof import('C:/SANTIAGO/Proyectos/template-vue-vite-node/client/src/components/Top.vue')['default']
   }
