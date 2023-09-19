@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #app {
@@ -6,16 +10,9 @@ body,
   padding: 0;
 }
 
-html.dark {
-  @apply bg-dark-400 text-gray-100;
-}
-html{
-  @apply text-blue-gray-700;
-}
-
 .btn {
   @apply px-4 py-1 rounded inline-block
-    bg-light-blue-900 text-gray-100 cursor-pointer
+    bg-blue-900 text-gray-100 cursor-pointer
     hover:bg-cyan-700
     disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
@@ -27,5 +24,5 @@ html{
   font-size: 0.9em;
 }
 .input{
-  @apply block mx-auto my-2 rounded text-blue-gray-700;
+  @apply block mx-auto my-2 rounded text-gray-700;
 }
